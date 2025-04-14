@@ -178,7 +178,7 @@ public:
 		EPlayMontageAdvancedNotifyHandling NotifyHandling = EPlayMontageAdvancedNotifyHandling::Montage,
 		bool bTriggerNotifiesBeforeStartTimeSeconds = true, bool bDrivenMontagesMatchDriverDuration = true,
 		bool bOverrideBlendIn = false, FMontageBlendSettings BlendInOverride = FMontageBlendSettings(),
-		bool bAllowInterruptAfterBlendOut = false, float OverrideBlendOutTimeOnCancelAbility = -1.f,
+		bool bAllowInterruptAfterBlendOut = true, float OverrideBlendOutTimeOnCancelAbility = -1.f,
 		float OverrideBlendOutTimeOnEndAbility = -1.f);
 
 	/**
@@ -214,7 +214,7 @@ public:
 		EPlayMontageAdvancedNotifyHandling NotifyHandling = EPlayMontageAdvancedNotifyHandling::Montage,
 		bool bTriggerNotifiesBeforeStartTimeSeconds = true, bool bDrivenMontagesMatchDriverDuration = true,
 		bool bOverrideBlendIn = false, FMontageBlendSettings BlendInOverride = FMontageBlendSettings(),
-		bool bAllowInterruptAfterBlendOut = false, float OverrideBlendOutTimeOnCancelAbility = -1.f,
+		bool bAllowInterruptAfterBlendOut = true, float OverrideBlendOutTimeOnCancelAbility = -1.f,
 		float OverrideBlendOutTimeOnEndAbility = -1.f);
 
 	/**
@@ -250,7 +250,7 @@ public:
 		EPlayMontageAdvancedNotifyHandling NotifyHandling = EPlayMontageAdvancedNotifyHandling::Montage,
 		bool bTriggerNotifiesBeforeStartTimeSeconds = true, bool bDrivenMontagesMatchDriverDuration = true,
 		bool bOverrideBlendIn = false, FMontageBlendSettings BlendInOverride = FMontageBlendSettings(),
-		bool bAllowInterruptAfterBlendOut = false, float OverrideBlendOutTimeOnCancelAbility = -1.f,
+		bool bAllowInterruptAfterBlendOut = true, float OverrideBlendOutTimeOnCancelAbility = -1.f,
 		float OverrideBlendOutTimeOnEndAbility = -1.f);
 
 	float PlayDrivenMontageForMesh(UPlayMontageAbilitySystemComponent* ASC, float Duration,

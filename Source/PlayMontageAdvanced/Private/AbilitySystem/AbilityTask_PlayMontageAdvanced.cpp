@@ -91,6 +91,14 @@ void UAbilityTask_PlayMontageAdvanced::OnMontageEnded(UAnimMontage* Montage, boo
 			EnsureBroadcastTagEvents(EPlayMontageAdvancedEventType::OnCompleted);
 		}
 	}
+	else if (bAllowInterruptAfterBlendOut)
+	{
+		if (ShouldBroadcastAbilityTaskDelegates())
+		{
+			OnInterrupted.Broadcast(FGameplayTag(), FGameplayEventData());
+			EnsureBroadcastTagEvents(EPlayMontageAdvancedEventType::OnInterrupted);
+		}
+	}
 
 	EndTask();
 }
