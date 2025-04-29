@@ -12,7 +12,20 @@ Supports:
 > [!TIP]
 > If you want to use the interface version with blueprint, you need to add this manually by adding a `BlueprintImplementableEvent` that `IPlayMontageByTagInterface::GetAbilityMontagesByTag` calls, otherwise C++ is required.
 
-![node](https://github.com/Vaei/repo_files/blob/main/PlayMontageByTag/node.png)
+![UnrealEditor-Win64-DebugGame_2025-04-30_05-11-05](https://github.com/user-attachments/assets/20ab9007-2963-4729-92b6-8b6ced9d288c)
+
+## Pseudo notify states
+
+Add a `AnimNotifyStateByTag` or `AnimNotifyByTag` to your montage and assign a gameplay tag
+
+![image](https://github.com/user-attachments/assets/577a6180-a648-42d5-a659-94a9f389a0c7)
+
+![image](https://github.com/user-attachments/assets/a7746292-171a-4958-9f87-92b5d9a0cefc)
+
+Then use the callback on the node to respond to the notify or notify state
+
+![image](https://github.com/user-attachments/assets/f13fa2fb-fc70-4797-9f29-ac0c1031d4dc)
+
 
 ## Setup
 
