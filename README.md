@@ -9,6 +9,16 @@ Supports:
  * Override blend-in settings programmatically
  * Driver and Driven montages (Driven montages can match the animation duration of the Driver montage)
 
+## Driving Montages
+
+There is always a Driver montage. Optionally you can add additional meshes and montages that will match their duration/position to the driver montage. This supports matching weapon reload montages to the character reload montages. It supports matching TPS/FPS montages to each other.
+
+You can apply Driven montages and Local Driven montages that will determine whether they get replicated to other clients or not. Local Driven montages are designed for FPS animations.
+
+## Options
+
+You can either directly connect the montage(s) you want to play to `InputParams`, or you can use an interface or component that maps tags to meshes and montages.
+
 > [!TIP]
 > If you want to use the interface version with blueprint, you need to add this manually by adding a `BlueprintImplementableEvent` that `IPlayMontageByTagInterface::GetAbilityMontagesByTag` calls, otherwise C++ is required.
 
