@@ -14,7 +14,7 @@ Supports:
 
 ![UnrealEditor-Win64-DebugGame_2025-04-30_05-11-05](https://github.com/user-attachments/assets/20ab9007-2963-4729-92b6-8b6ced9d288c)
 
-## Pseudo notify states
+## Pseudo notifies
 
 Add a `AnimNotifyStateByTag` or `AnimNotifyByTag` to your montage and assign a gameplay tag
 
